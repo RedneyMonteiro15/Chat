@@ -165,7 +165,6 @@
               <Color blue="ff" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Registar"/>
-            <Property name="actionCommand" type="java.lang.String" value="Registar"/>
           </Properties>
           <Events>
             <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btRegistarMouseReleased"/>

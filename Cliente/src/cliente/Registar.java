@@ -4,6 +4,13 @@
  */
 package cliente;
 
+import java.io.IOException;
+import java.net.Socket;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
+
 /**
  *
  * @author redne
@@ -72,7 +79,6 @@ public class Registar extends javax.swing.JFrame {
         btRegistar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btRegistar.setForeground(new java.awt.Color(0, 0, 255));
         btRegistar.setText("Registar");
-        btRegistar.setActionCommand("Registar");
         btRegistar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 btRegistarMouseReleased(evt);
@@ -172,7 +178,7 @@ public class Registar extends javax.swing.JFrame {
         
         if(edNome.getText().length() != 0 && edPassword.getPassword().length != 0){
             tvStatus.setText("Username: " + edNome.getText() + "\nSenha: " + edPassword.getText().toString());
-            
+           
         }
     }//GEN-LAST:event_btRegistarMouseReleased
 

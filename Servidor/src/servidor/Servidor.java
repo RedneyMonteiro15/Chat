@@ -176,5 +176,11 @@ public class Servidor extends Thread{
         }
         System.out.println("Destino: " + dest);
     }
+    
+    
+    public static void inserirUser(String nome, String password){
+        gerirBD.inserirUSer(nome, password);
+        System.out.println("Total: " + gerirBD.totalUser());
+    }
 
 }
